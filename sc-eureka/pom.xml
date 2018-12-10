@@ -73,7 +73,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <imageName>itmuch/sc-eureka:0.0.2</imageName>
+                    <imageName>abel/sc-eureka:0.0.1-SNAPSHOT</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
