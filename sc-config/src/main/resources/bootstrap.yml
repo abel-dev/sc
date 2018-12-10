@@ -1,0 +1,15 @@
+server:
+  port: 8072
+
+spring:
+  application:
+    name: sc-config
+
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    prefer-ip-address: true
+    instanceId: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://${spring.cloud.client.ip-address}:8071/eureka/
